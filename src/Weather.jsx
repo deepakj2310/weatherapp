@@ -10,7 +10,7 @@ const Weather = () => {
   }
   const fetchWeather = async () => {
     try{
-      const response = await  axios.get(`http://api.weatherstack.com/current?access_key=${'e456f7d4279983c97f27d0c4c6489e8e'}&query=${city},india`)
+      const response = await  axios.get(`https://api.weatherstack.com/current?access_key=${'e456f7d4279983c97f27d0c4c6489e8e'}&query=${city},india`)
       //console.log(response);
       setWeather(response.data);
     }
